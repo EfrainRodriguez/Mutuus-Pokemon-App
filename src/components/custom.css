@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+/*------------------ general styles ----------------*/
+.pri-font-color{
+    color: #248B8B;
+}
+
+.pri-font-family{
+    font-family: 'Poppins', sans-serif;
+}
+
+.custom-label-font{
+    color: #248B8B;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.custom-text-font{
+    font-size: 1.1rem !important;
+    text-transform: capitalize !important;
+    color: white !important;
+}
+
+.custom-tab-font{
+    color: white !important;
+}
+
+/*---------------- pokemon card styles -------------*/
+
+.custom-card{
+    width: 600px !important;
+}
+
+@media (max-width: 930px) {
+    .custom-card{
+      width: 300px !important;
+    }
+}
+
+/*---------------- pokemon profile card styles -------------*/
+.custom-profile-card{
+    width: 900px !important;
+}
+
+.custom-tab-item{
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+@media (max-width: 930px) {
+    .custom-profile-card{
+      width: 300px !important;
+    }
+
+    .custom-tab-item{
+        margin-right: 2px;
+        margin-left: 2px;
+    }
+}
+
+/*---------------- evolution panel card styles -------------*/
+.custom-ev-panel-card{
+    width: 400px !important;
+}
+
+@media (max-width: 930px) {
+    .custom-ev-panel-card{
+      width: 300px !important;
+    }
+}
+
+.custom-about-col{
+    width: 300px
+}
