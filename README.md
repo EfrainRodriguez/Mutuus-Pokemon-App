@@ -6,9 +6,11 @@ A aplicação foi constrida com [React js](https://reactjs.org/) usando Hooks e 
 
 O projeto foi desenvolvido como parte do desafio de teste técnico passado pela empresa [Mutuus](https://www.mutuus.net/) no processo de seleção de novos membros para a equipe de desenvolvimento.
 
+Você pode ver uma demo live da aplicação servida pelo gh-pages [aqui](https://efrainrodriguez.github.io/).
+
 Alguns detalhes da aplicação são dados a seguir.
 
-## Requerimentos da aplicação
+## Requerimentos da aplicação :clipboard:
 
 Como requerimento principal foi especificado implementar uma solução web capaz de consumir a API do Pokemon para obter diferentes tipos de informações e apresentá-las para o usuário em uma interface gráfica no navegador.
 
@@ -21,7 +23,7 @@ As funcionalidades da aplicação consistem de:
 - A vista premiliminar do Pokemon é apresentada em uma card sobre a qual tem um botão "Detalhes" que leva o usuário para uma tela com maiores informações sobre do Pokemon selecionado.
 - A nova tela de detalhes possui um parte fixa com a imagem do Pokemon, e uma navegação em formato de abas. Na primeira aba, o usuário pode acessar às informações de caraterísticas do Pokemon (habilidades, peso, altura, tipo, forma, etc.). A segunda aba corresponde à cadeia de evolução do Pokemon selecionado, mostrando o Pokemon de estado anterior e o da segunte evolução, assim como também uma lista extendida de todos os Pokemons da acdeia de evolução. Finalmente, na aba de "_stats_", são mostradas informações de valor de ataque, velocidade, defesa, etc.
 
-### Instalação
+### Instalação :arrow_down:
 
 O repositorio do projeto pode encontrado [aqui](https://github.com/EfrainRodriguez/Mutuus-Pokemon-App.git). Você pode escolher em baixar ou clonar o projeto usando o comando `clone` do Git:
 
@@ -39,7 +41,7 @@ npm install
 
 Isso instalará todas as dependencias necessárias para rodar o programa.
 
-## Execução
+## Execução :computer:
 
 Estando no diretorio principal, digite na terminal o comando:
 
@@ -47,7 +49,11 @@ Estando no diretorio principal, digite na terminal o comando:
 
 isso abrirá automáticamente a aplicação no seu navegador padrão usando a url [http://localhost:3000](http://localhost:3000).
 
-### Sobre a estrutura da aplicação
+## Deployment :rocket:
+
+Foi publicada uma versão de [demo live](https://efrainrodriguez.github.io/profile) da aplicação usando o serviço de hosting gratuito do Github pages com ajuda do modulo `gh-pages`.
+
+### Sobre a estrutura da aplicação :hammer:
 
 A figura abaixo apresenta a esquematização da estrutura dos componentes de React criados para a aplicação. O componente raiz da aplicação é denotado como `<App/>`. Nesse componente são chamados os componentes `<Home/>` e `<PokemonProfile/>`, os quais representam a tela principal com lista de Pokemons e a tela de perfil de um Pokemon selecionado, respectivamente. O paso de uma tela à outra é possível através da configuração do `react-router-dom` que permite criar as rotas associadas a esse componentes usando os componentes `Router`, `Switch` e `Route` que são parte do `react-router-dom`.
 
@@ -69,7 +75,7 @@ Para criar a funcionalidade de scroll infito foi instalado e usado o modulo `rea
 
 Para agregar estilos foram usadas classes de `Bootstrap` junto com componentes de `react-bootstrap`, ambos modulos instalados via `npm`.
 
-### Comnetários sobre o ciclo de vida dos componentes em React
+### Comnetários sobre o ciclo de vida dos componentes em React :heavy_check_mark:
 
 Nos inícios de React, os componentes eram criados com classes extendendo a classe React Component, e com isso os componentes criados aproveitam as vantagens da herança para adquirir funcionalidades para gerenciar seu proprio estado. Esses componentes possuem um ciclo de vida, que é composto essencialmente por três fases: a montagem do componente, atulização e a desmontagem... no entanto, também é considerado como fase do ciclo de vida a inicialização do estado do componente...
 
@@ -79,7 +85,7 @@ Algo que vale a pena ressaltar também é que os componentes podem se comunicar 
 
 De maneira geral, os componentes em React tem um estado e um ciclo de vida que consiste de fases nas quais acontece alguma coisa com esse estado.
 
-### Observações
+### Observações :heavy_check_mark:
 
 De fato trabalhar com React traz muitos beneficios em termos de rendimento da aplicação pois ao ser baseado em componentes que tem estado proprio não precisa de atulizar toda pagina atual da aplicação cada vez que o cliente faz alguma transação, ao invés disso só atuliza o estado do compoennte individual... isso é mais notável ainda quando se trabalha com o supoerte para server side rendering usando o framework de Next js por exemplo.
 
