@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/Mutuus-Pokemon-App/static/css/main.33b6b3a7.chunk.css",
-    "main.js": "/Mutuus-Pokemon-App/static/js/main.59a4f810.chunk.js",
-    "main.js.map": "/Mutuus-Pokemon-App/static/js/main.59a4f810.chunk.js.map",
+    "main.js": "/Mutuus-Pokemon-App/static/js/main.52bb668d.chunk.js",
+    "main.js.map": "/Mutuus-Pokemon-App/static/js/main.52bb668d.chunk.js.map",
     "runtime-main.js": "/Mutuus-Pokemon-App/static/js/runtime-main.4a6bb5a9.js",
     "runtime-main.js.map": "/Mutuus-Pokemon-App/static/js/runtime-main.4a6bb5a9.js.map",
     "static/css/2.150d169a.chunk.css": "/Mutuus-Pokemon-App/static/css/2.150d169a.chunk.css",
-    "static/js/2.2418caff.chunk.js": "/Mutuus-Pokemon-App/static/js/2.2418caff.chunk.js",
-    "static/js/2.2418caff.chunk.js.map": "/Mutuus-Pokemon-App/static/js/2.2418caff.chunk.js.map",
+    "static/js/2.92d08ded.chunk.js": "/Mutuus-Pokemon-App/static/js/2.92d08ded.chunk.js",
+    "static/js/2.92d08ded.chunk.js.map": "/Mutuus-Pokemon-App/static/js/2.92d08ded.chunk.js.map",
     "static/js/3.6be4b5cf.chunk.js": "/Mutuus-Pokemon-App/static/js/3.6be4b5cf.chunk.js",
     "static/js/3.6be4b5cf.chunk.js.map": "/Mutuus-Pokemon-App/static/js/3.6be4b5cf.chunk.js.map",
     "index.html": "/Mutuus-Pokemon-App/index.html",
     "static/css/2.150d169a.chunk.css.map": "/Mutuus-Pokemon-App/static/css/2.150d169a.chunk.css.map",
     "static/css/main.33b6b3a7.chunk.css.map": "/Mutuus-Pokemon-App/static/css/main.33b6b3a7.chunk.css.map",
-    "static/js/2.2418caff.chunk.js.LICENSE.txt": "/Mutuus-Pokemon-App/static/js/2.2418caff.chunk.js.LICENSE.txt"
+    "static/js/2.92d08ded.chunk.js.LICENSE.txt": "/Mutuus-Pokemon-App/static/js/2.92d08ded.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.4a6bb5a9.js",
     "static/css/2.150d169a.chunk.css",
-    "static/js/2.2418caff.chunk.js",
+    "static/js/2.92d08ded.chunk.js",
     "static/css/main.33b6b3a7.chunk.css",
-    "static/js/main.59a4f810.chunk.js"
+    "static/js/main.52bb668d.chunk.js"
   ]
 }
