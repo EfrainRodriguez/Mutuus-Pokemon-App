@@ -61,56 +61,53 @@ const PokemonProfile = () => {
 
     return (
         <Container className="d-flex flex-wrap justify-content-center">
-            {
-                pokemon ? 
-                <Card className="card text-white bg-dark m-3 custom-profile-card pri-font-family">
-                    <Card.Header className="card-header d-flex justify-content-center pb-0 text-capitalize">
-                        <p className="h2">{pokemon.name}</p>
-                    </Card.Header>
-                    <Container className="d-flex justify-content-center">
-                        <Card.Img
-                            src={pokemon.sprites.front_default}
-                            alt={'this is the pokemon ' + pokemon.name}
-                            style={{width: '300px'}}
-                        />
-                    </Container>
-                    <Card.Body className="d-flex justify-content-center">
-                        <Nav
-                            variant="pills"
-                            activeKey={
-                                (selectedTab === 'about' ? 'about' : null) ||
-                                (selectedTab === 'evolutions' ? 'evolutions' : null) ||
-                                (selectedTab === 'stats' ? 'stats' : null)
-                            }
-                            onSelect={(selectedKey) => selectedTabHandler(selectedKey)}
-                        >
-                            <Nav.Item className="custom-tab-item" >
-                                <Nav.Link className="custom-tab-font"
-                                    eventKey="about">About
-                                </Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item className="custom-tab-item" >
-                                <Nav.Link className="custom-tab-font" 
-                                    eventKey="evolutions">Evolutions
-                                </Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item className="custom-tab-item" >
-                                <Nav.Link className="custom-tab-font" 
-                                    eventKey="stats">Stats
-                                </Nav.Link>
-                            </Nav.Item>
-                        </Nav>
-                    </Card.Body>
-                    <hr className="m-0"/>
-                    <Container className="py-4">
-                        {
-                            (selectedTab === 'about' && species !== null ? <AboutPanel pokemon = {pokemon} species = {species}/> : null) ||
-                            (selectedTab === 'evolutions' && pokemonChain !== null ? <EvolutionPanel pokemon = {pokemon} evChain = {pokemonChain} /> : null) ||
-                            (selectedTab === 'stats' ? <StatsPanel pokemon = {pokemon}/> : null)
+            <Card className="card text-white bg-dark m-3 custom-profile-card pri-font-family">
+                <Card.Header className="card-header d-flex justify-content-center pb-0 text-capitalize">
+                    <p className="h2">{pokemon.name}</p>
+                </Card.Header>
+                <Container className="d-flex justify-content-center">
+                    <Card.Img
+                        src={pokemon.sprites.front_default}
+                        alt={'this is the pokemon ' + pokemon.name}
+                        style={{width: '300px'}}
+                    />
+                </Container>
+                <Card.Body className="d-flex justify-content-center">
+                    <Nav
+                        variant="pills"
+                        activeKey={
+                            (selectedTab === 'about' ? 'about' : null) ||
+                            (selectedTab === 'evolutions' ? 'evolutions' : null) ||
+                            (selectedTab === 'stats' ? 'stats' : null)
                         }
-                    </Container>
-                </Card> : <Redirect to={'/'}/>
-            }
+                        onSelect={(selectedKey) => selectedTabHandler(selectedKey)}
+                    >
+                        <Nav.Item className="custom-tab-item" >
+                            <Nav.Link className="custom-tab-font"
+                                eventKey="about">About
+                            </Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item className="custom-tab-item" >
+                            <Nav.Link className="custom-tab-font" 
+                                eventKey="evolutions">Evolutions
+                            </Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item className="custom-tab-item" >
+                            <Nav.Link className="custom-tab-font" 
+                                eventKey="stats">Stats
+                            </Nav.Link>
+                        </Nav.Item>
+                    </Nav>
+                </Card.Body>
+                <hr className="m-0"/>
+                <Container className="py-4">
+                    {
+                        (selectedTab === 'about' && species !== null ? <AboutPanel pokemon = {pokemon} species = {species}/> : null) ||
+                        (selectedTab === 'evolutions' && pokemonChain !== null ? <EvolutionPanel pokemon = {pokemon} evChain = {pokemonChain} /> : null) ||
+                        (selectedTab === 'stats' ? <StatsPanel pokemon = {pokemon}/> : null)
+                    }
+                </Container>
+            </Card>
         </Container>
     )
 }

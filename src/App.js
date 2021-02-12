@@ -8,6 +8,8 @@ import store from './store';
 //styles
 import './components/custom.css'
 
+import {Redirect} from 'react-router-dom'
+
 //components
 import Navbar from './components/Navbar'
 import Home from './components/Home';
@@ -19,8 +21,9 @@ function App() {
       <Provider store={store}>
         <Navbar/>
         <Switch>
-          <Route exact path="/" component={Home}/>
+          <Route exact path="/home" component={Home}/>
           <Route exact path="/profile" component={PokemonProfile}/>
+          <Redirect to={'/home'}/>
         </Switch>
       </Provider>
     </Router>
