@@ -6,7 +6,7 @@ A aplicação foi constrida com [React js](https://reactjs.org/) usando Hooks e 
 
 O projeto foi desenvolvido como parte do desafio de teste técnico passado pela empresa [Mutuus](https://www.mutuus.net/) no processo de seleção de novos membros para a equipe de desenvolvimento.
 
-Você pode ver uma demo live da aplicação servida pelo gh-pages [aqui](https://efrainrodriguez.github.io/).
+Você pode ver uma demo live da aplicação servida pelo gh-pages [aqui](https://efrainrodriguez.github.io/Mutuus-Pokemon-App).
 
 Alguns detalhes da aplicação são dados a seguir.
 
